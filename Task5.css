@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background: lightpink;
+}
+
+#navbar a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+}
+
+#navbar a:hover {
+  background: pink;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 100vh auto 300px 100px;
+}
+
+#welcome-section {
+  text-align: center;
+  background: linear-gradient(35deg, #29e9d1, #ffffff, #FFCCCC);
+  padding-top: 45vh;
+}
+
+#projects {
+  text-align: center;
+  background: linear-gradient(35deg, #29e9d1, #ffffff, #FFCCCC);
+}
+
+#profile {
+  text-align: center;
+  background: linear-gradient(35deg, #29e9d1, #ffffff, #FFCCCC);
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+#profile-link {
+  color: black;
+  font-size: 1.2em;
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.project-tile {
+  background: linear-gradient(35deg, #29e9d1, white);
+  padding: 2em;
+}
+
+@media all and (max-width: 600px) {
+  #navbar {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+}
+.oval {
+  height: 80px;
+  width: 150px;
+  background-color: lightblue;
+  border-radius: 50%;  
+  text-align: center;
+  vertical-align: center;
+  line-height: 80px;
+}
